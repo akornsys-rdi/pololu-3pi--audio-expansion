@@ -144,24 +144,25 @@ This event should cause a latching event, and should not be recoverable until po
 
 The different LEDs located on the different boards of each robot have a meaning that can help to understand the current behavior of the robot, as well as to detect possible failures and their cause.
 
-| LED                                 | Lighting mode                 | Current status                               | Notes                                                                                               |
-|-------------------------------------|-------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------|
-| Green LED on main board             | 1Hz blinking                  | Waiting for identifier of **ATSAMD21**       |                                                                                                     |
-| Yellow LED on main board            | Fixed                         | Motion after obstacle detection or timeout   |                                                                                                     |
-| Red LED on main board               | 2Hz blinking                  | Low battery                                  |                                                                                                     |
-| Red LED on Audio Expansion board    | Fixed                         | Battery charging                             | With USB connected to Audio Expansion                                                               |
-| Red LED on Audio Expansion board    | Off                           | Battery charged                              | With USB connected to Audio Expansion                                                               |
-| Orange LED on Audio Expansion board | 31Hz blinking                 | SD card not found                            | No SD card                                                                                          |
-| Orange LED on Audio Expansion board | 31Hz blinking                 | Audio files not found or not valid           | With SD card                                                                                        |
-| Orange LED on Audio Expansion board | Fixed                         | Playing audio                                |                                                                                                     |
-| RGB LED on Audio Expansion board    | Fixed any color               | Identifying color assigned to the robot      | Right at startup                                                                                    |
-| RGB LED on Audio Expansion board    | 15Hz white blinking           | Awaiting communication with **ATSAMD21**     | In start-up sequence                                                                                |
-| RGB LED on Audio Expansion board    | Fixed pure green              | Successful communication with **ATSAMD21**   | In start-up sequence after white blinking, duration 500ms                                           |
-| RGB LED on Audio Expansion board    | Fixed pure red                | Unsuccessful communication with **ATSAMD21** | In start-up sequence after white blinking, duration 500ms                                           |
-| RGB LED on Audio Expansion board    | 8Hz robot identifier blinking | Pause mode                                   | After the start-up sequence                                                                         |
-| RGB LED on Audio Expansion board    | Fixed robot identifier        | Active mode                                  | After the start-up sequence, duration 5s                                                            |
-| RGB LED on Audio Expansion board    | Off                           | Active mode                                  | After the start-up sequence, after being fixed for 5s                                               |
-| RGB LED on Audio Expansion board    | Fixed any color               | Identification color selection               | After the start-up sequence, moving the identifier selection potentiometer or up to 3 seconds later |
+| LED                                      | Lighting mode                 | Current status                               | Notes                                                                                               |
+|------------------------------------------|-------------------------------|----------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| Green LED on main board                  | 1Hz blinking                  | Waiting for identifier of **ATSAMD21**       |                                                                                                     |
+| Yellow LED on main board                 | Fixed                         | Motion after obstacle detection or timeout   |                                                                                                     |
+| Red LED on main board                    | 2Hz blinking                  | Low battery                                  |                                                                                                     |
+| Green, yellow and red LEDs on main board | 10Hz blinking                 | Error in initial check                       | All LEDs simultaneously                                                                             |
+| Red LED on Audio Expansion board         | Fixed                         | Battery charging                             | With USB connected to Audio Expansion                                                               |
+| Red LED on Audio Expansion board         | Off                           | Battery charged                              | With USB connected to Audio Expansion                                                               |
+| Orange LED on Audio Expansion board      | 31Hz blinking                 | SD card not found                            | No SD card                                                                                          |
+| Orange LED on Audio Expansion board      | 31Hz blinking                 | Audio files not found or not valid           | With SD card                                                                                        |
+| Orange LED on Audio Expansion board      | Fixed                         | Playing audio                                |                                                                                                     |
+| RGB LED on Audio Expansion board         | Fixed any color               | Identifying color assigned to the robot      | Right at startup                                                                                    |
+| RGB LED on Audio Expansion board         | 15Hz white blinking           | Awaiting communication with **ATSAMD21**     | In start-up sequence                                                                                |
+| RGB LED on Audio Expansion board         | Fixed pure green              | Successful communication with **ATSAMD21**   | In start-up sequence after white blinking, duration 500ms                                           |
+| RGB LED on Audio Expansion board         | Fixed pure red                | Unsuccessful communication with **ATSAMD21** | In start-up sequence after white blinking, duration 500ms                                           |
+| RGB LED on Audio Expansion board         | 8Hz robot identifier blinking | Pause mode                                   | After the start-up sequence                                                                         |
+| RGB LED on Audio Expansion board         | Fixed robot identifier        | Active mode                                  | After the start-up sequence, duration 5s                                                            |
+| RGB LED on Audio Expansion board         | Off                           | Active mode                                  | After the start-up sequence, after being fixed for 5s                                               |
+| RGB LED on Audio Expansion board         | Fixed any color               | Identification color selection               | After the start-up sequence, moving the identifier selection potentiometer or up to 3 seconds later |
 
 ## Summary of uplink/downlink commands
 
