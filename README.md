@@ -23,7 +23,7 @@ Expansion board to provide audio playback for Pololu 3pi+ 32U4 Robot
     C -> SERIAL UPLINK      D -> DIGITAL PROTOCOL
     E -> DIGITAL INTERLINK
 
-## Protocolos de comunicaciones
+## Communication protocols
 
 - Battery reading by analog reading of `A1` of the **ATmega32U4**, the `readBatteryMillivolts()` function (implemented by the Pololu library) provides this functionality.
 - Reading the identifier selection potentiometer by analog reading of `A2` from the **ATtiny85**, the `readIdPot()` function (to be implemented in code) provides this functionality.
