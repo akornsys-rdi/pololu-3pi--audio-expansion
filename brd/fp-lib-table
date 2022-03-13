@@ -1,0 +1,5 @@
+(fp_lib_table
+  (lib (name 18650-holder)(type KiCad)(uri ${KIPRJMOD}/lib/18650-holder.pretty)(options "")(descr ""))
+  (lib (name 5009010801)(type KiCad)(uri ${KIPRJMOD}/lib/5009010801.pretty)(options "")(descr ""))
+  (lib (name logo-ex)(type KiCad)(uri ${KIPRJMOD}/lib/logo-ex.pretty)(options "")(descr ""))
+)

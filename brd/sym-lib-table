@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name STF202)(type Legacy)(uri ${KIPRJMOD}/lib/STF202.lib)(options "")(descr ""))
+  (lib (name MAX98357)(type Legacy)(uri ${KIPRJMOD}/lib/MAX98357.lib)(options "")(descr ""))
+)
